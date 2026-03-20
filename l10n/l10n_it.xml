@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Vendita Diretta Balle" />
+    <text name="baleDirect_subtitle" text="Servizio di ritiro a distanza (-%d%% prezzo, si applicano commissioni)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Balle" />
+    <text name="baleDirect_grossValue" text="Valore" />
+    <text name="baleDirect_totalFees" text="Commissioni" />
+    <text name="baleDirect_netProfit" text="Profitto Netto" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Tipo di Servizio:" />
+    <text name="baleDirect_modeExistingBales" text="Ritiro" />
+    <text name="baleDirect_modeVirtualBaling" text="Pressatura + Ritiro" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Nessuna balla sul campo" />
+    <text name="baleDirect_noWindrowsFound" text="Nessuna andana trovata" />
+    <text name="baleDirect_sell" text="Vendi" />
+    <text name="baleDirect_openDialog" text="Vendi Balle" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Incasso" />
+    <text name="baleDirect_deliveryExpress" text="Express (istantaneo)" />
+    <text name="baleDirect_deliveryDeferred" text="Differito (fine stagione, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Pagamento previsto: %s. Mese: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Ritiro" />
+    <text name="baleDirect_itemQuantity" text="Quantità" />
+    <text name="baleDirect_itemDisabled" text="Salta" />
+    <text name="baleDirect_itemEdit" text="Configura" />
+    <text name="baleDirect_sellConfirm" text="Sei sicuro di voler elaborare il servizio?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d balle (150cm - 5500L)" />
+  </texts>
+</l10n>

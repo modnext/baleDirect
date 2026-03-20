@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Direktförsäljning av Balar" />
+    <text name="baleDirect_subtitle" text="Fjärrhämtningstjänst (-%d%% pris, avgifter tillkommer)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Balar" />
+    <text name="baleDirect_grossValue" text="Värde" />
+    <text name="baleDirect_totalFees" text="Avgifter" />
+    <text name="baleDirect_netProfit" text="Nettovinst" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Tjänstetyp:" />
+    <text name="baleDirect_modeExistingBales" text="Hämtning" />
+    <text name="baleDirect_modeVirtualBaling" text="Balning + Hämtning" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Inga balar på fältet" />
+    <text name="baleDirect_noWindrowsFound" text="Inga strängar hittades" />
+    <text name="baleDirect_sell" text="Sälj" />
+    <text name="baleDirect_openDialog" text="Sälj Balar" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Utbetalning" />
+    <text name="baleDirect_deliveryExpress" text="Express (omedelbart)" />
+    <text name="baleDirect_deliveryDeferred" text="Uppskjuten (efter säsongen, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Väntad utbetalning: %s. Månad: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Hämtning" />
+    <text name="baleDirect_itemQuantity" text="Antal" />
+    <text name="baleDirect_itemDisabled" text="Hoppa över" />
+    <text name="baleDirect_itemEdit" text="Konfigurera" />
+    <text name="baleDirect_sellConfirm" text="Är du säker på att du vill utföra tjänsten?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d balar (150cm - 5500L)" />
+  </texts>
+</l10n>

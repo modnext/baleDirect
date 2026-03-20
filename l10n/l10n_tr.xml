@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Doğrudan Balya Satışı" />
+    <text name="baleDirect_subtitle" text="Uzaktan toplama hizmeti (-%d%% fiyat, ücretler uygulanır)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Balya" />
+    <text name="baleDirect_grossValue" text="Değer" />
+    <text name="baleDirect_totalFees" text="Ücretler" />
+    <text name="baleDirect_netProfit" text="Net Kâr" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Hizmet Türü:" />
+    <text name="baleDirect_modeExistingBales" text="Toplama" />
+    <text name="baleDirect_modeVirtualBaling" text="Balyalama + Toplama" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Tarlada balya yok" />
+    <text name="baleDirect_noWindrowsFound" text="Namlu bulunamadı" />
+    <text name="baleDirect_sell" text="Sat" />
+    <text name="baleDirect_openDialog" text="Balyaları Sat" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Tahsilat" />
+    <text name="baleDirect_deliveryExpress" text="Ekspres (anında)" />
+    <text name="baleDirect_deliveryDeferred" text="Ertelenmiş (sezon sonu, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Beklenen ödeme: %s. Ay: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Toplama" />
+    <text name="baleDirect_itemQuantity" text="Miktar" />
+    <text name="baleDirect_itemDisabled" text="Atla" />
+    <text name="baleDirect_itemEdit" text="Yapılandır" />
+    <text name="baleDirect_sellConfirm" text="Hizmeti işlemek istediğinizden emin misiniz?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d balya (150cm - 5500L)" />
+  </texts>
+</l10n>

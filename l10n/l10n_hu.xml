@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Közvetlen Bálaértékesítés" />
+    <text name="baleDirect_subtitle" text="Távoli elszállítási szolgáltatás (-%d%% ár, díjak fizetendők)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Bála" />
+    <text name="baleDirect_grossValue" text="Érték" />
+    <text name="baleDirect_totalFees" text="Díjak" />
+    <text name="baleDirect_netProfit" text="Nettó nyereség" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Szolgáltatás típusa:" />
+    <text name="baleDirect_modeExistingBales" text="Elszállítás" />
+    <text name="baleDirect_modeVirtualBaling" text="Bálázás + Elszállítás" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Nincs bála a mezőn" />
+    <text name="baleDirect_noWindrowsFound" text="Nem található rend" />
+    <text name="baleDirect_sell" text="Eladás" />
+    <text name="baleDirect_openDialog" text="Bála eladása" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Kifizetés" />
+    <text name="baleDirect_deliveryExpress" text="Express (azonnali)" />
+    <text name="baleDirect_deliveryDeferred" text="Halasztott (szezon után, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Várható kifizetés: %s. Hónap: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Elszállítás" />
+    <text name="baleDirect_itemQuantity" text="Mennyiség" />
+    <text name="baleDirect_itemDisabled" text="Kihagyás" />
+    <text name="baleDirect_itemEdit" text="Konfigurálás" />
+    <text name="baleDirect_sellConfirm" text="Biztosan végre szeretné hajtani a szolgáltatást?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d bála (150cm - 5500L)" />
+  </texts>
+</l10n>

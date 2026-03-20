@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Přímý Prodej Balíků" />
+    <text name="baleDirect_subtitle" text="Služba dálkového odvozu (-%d%% ceny, účtovány poplatky)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Balíky" />
+    <text name="baleDirect_grossValue" text="Hodnota" />
+    <text name="baleDirect_totalFees" text="Poplatky" />
+    <text name="baleDirect_netProfit" text="Čistý zisk" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Typ služby:" />
+    <text name="baleDirect_modeExistingBales" text="Odvoz" />
+    <text name="baleDirect_modeVirtualBaling" text="Lisování + Odvoz" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Na poli nejsou žádné balíky" />
+    <text name="baleDirect_noWindrowsFound" text="Nebyly nalezeny žádné řádky" />
+    <text name="baleDirect_sell" text="Prodat" />
+    <text name="baleDirect_openDialog" text="Prodat balíky" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Výplata" />
+    <text name="baleDirect_deliveryExpress" text="Expresní (okamžitě)" />
+    <text name="baleDirect_deliveryDeferred" text="Odložená (po sezóně, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Očekávaná platba: %s. Měsíc: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Odvoz" />
+    <text name="baleDirect_itemQuantity" text="Množství" />
+    <text name="baleDirect_itemDisabled" text="Vynechat" />
+    <text name="baleDirect_itemEdit" text="Konfigurovat" />
+    <text name="baleDirect_sellConfirm" text="Opravdu chcete provést službu?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d balíků (150cm - 5500L)" />
+  </texts>
+</l10n>

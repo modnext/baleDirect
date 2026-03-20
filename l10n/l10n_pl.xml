@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Zdalna Sprzedaż Bel" />
+    <text name="baleDirect_subtitle" text="Usługa odbioru (-%d%% ceny, opłaty)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Bele" />
+    <text name="baleDirect_grossValue" text="Wartość" />
+    <text name="baleDirect_totalFees" text="Opłaty" />
+    <text name="baleDirect_netProfit" text="Zysk Netto" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Typ usługi:" />
+    <text name="baleDirect_modeExistingBales" text="Odbiór" />
+    <text name="baleDirect_modeVirtualBaling" text="Prasowanie + Odbiór" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Brak bel na polu" />
+    <text name="baleDirect_noWindrowsFound" text="Nie znaleziono pokosów" />
+    <text name="baleDirect_sell" text="Sprzedaj" />
+    <text name="baleDirect_openDialog" text="Sprzedaj Bele" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Wypłata" />
+    <text name="baleDirect_deliveryExpress" text="Ekspresowa (od ręki)" />
+    <text name="baleDirect_deliveryDeferred" text="Odroczona (po sezonie, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Wypłata odroczona w kwocie %s. Miesiąc wypłaty: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Odbiór" />
+    <text name="baleDirect_itemQuantity" text="Ilość" />
+    <text name="baleDirect_itemDisabled" text="Pomiń" />
+    <text name="baleDirect_itemEdit" text="Konfiguruj" />
+    <text name="baleDirect_sellConfirm" text="Czy na pewno chcesz zrealizować usługę?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d bel (150cm - 5500L)" />
+  </texts>
+</l10n>

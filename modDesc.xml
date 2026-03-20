@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="107">
+  <author>aaw3k</author>
+  <version>1.0.0.0</version>
+
+  <title>
+    <en>Bale Direct</en>
+    <de>Ballen Direktverkauf</de>
+    <fr>Vente Directe De Balles</fr>
+    <pl>Mobilny Skup Bel</pl>
+    <ru>Прямая Продажа Тюков</ru>
+  </title>
+
+  <description>
+    <en><![CDATA[
+Sell bales remotely from the map menu without driving to a selling point. Select an owned field on the map and use the remote pickup service to sell bales directly. Features include per-item configuration, service mode selection (Pickup or Baling + Pickup), express or deferred payout options, difficulty-scaled economy with fees, and full multiplayer support.
+
+How to use:
+- Select an owned farmland with bales on the map to see the "Sell Bales" button.
+- Choose service type, configure items and payout method, then confirm the sale.
+
+For more information or to report a bug, please visit GitHub (modnext/baleDirect).
+]]></en>
+    <de><![CDATA[
+Verkaufen Sie Ballen direkt aus dem Kartenmenü, ohne zu einem Verkaufspunkt fahren zu müssen. Wählen Sie ein eigenes Feld auf der Karte und nutzen Sie den Fernabholservice, um Ballen direkt zu verkaufen. Zu den Funktionen gehören Einzelkonfiguration, Servicemodus-Auswahl (Abholung oder Pressen + Abholung), Express- oder aufgeschobene Auszahlungsoptionen, schwierigkeitsabhängige Wirtschaft mit Gebühren und volle Multiplayer-Unterstützung.
+
+Verwendung:
+- Wählen Sie ein eigenes Feld mit Ballen auf der Karte, um die Schaltfläche „Ballen verkaufen" zu sehen.
+- Wählen Sie den Servicetyp, konfigurieren Sie Artikel und Auszahlungsmethode und bestätigen Sie den Verkauf.
+
+Für weitere Informationen oder um einen Fehler zu melden, besuchen Sie bitte GitHub (modnext/baleDirect).
+]]></de>
+    <fr><![CDATA[
+Vendez des balles directement depuis le menu de la carte sans avoir à vous rendre à un point de vente. Sélectionnez un champ possédé sur la carte et utilisez le service de ramassage à distance pour vendre les balles directement. Les fonctionnalités incluent la configuration par article, la sélection du mode de service (Ramassage ou Pressage + Ramassage), les options de versement express ou différé, une économie adaptée à la difficulté avec des frais, et le support multijoueur complet.
+
+Utilisation:
+- Sélectionnez un champ possédé avec des balles sur la carte pour voir le bouton « Vendre les balles ».
+- Choisissez le type de service, configurez les articles et le mode de versement, puis confirmez la vente.
+
+Pour plus d'informations ou pour signaler un bug, veuillez visiter GitHub (modnext/baleDirect).
+]]></fr>
+    <pl><![CDATA[
+Sprzedawaj bele zdalnie z menu mapy bez konieczności jazdy do punktu skupu. Wybierz własne pole na mapie i skorzystaj z usługi zdalnego odbioru, aby sprzedać bele bezpośrednio. Funkcje obejmują konfigurację poszczególnych pozycji, wybór trybu usługi (Odbiór lub Prasowanie + Odbiór), opcje wypłaty ekspresowej lub odroczonej, ekonomię skalowaną poziomem trudności z opłatami oraz pełne wsparcie dla trybu wieloosobowego.
+
+Jak używać:
+- Wybierz własne pole z belami na mapie, aby zobaczyć przycisk „Sprzedaj Bele".
+- Wybierz typ usługi, skonfiguruj pozycje i metodę wypłaty, a następnie potwierdź sprzedaż.
+
+Aby uzyskać więcej informacji lub zgłosić błąd, odwiedź GitHub (modnext/baleDirect).
+]]></pl>
+    <ru><![CDATA[
+Продавайте тюки прямо из меню карты без поездки к точке продажи. Выберите собственное поле на карте и воспользуйтесь сервисом удалённой отгрузки для прямой продажи тюков. Функции включают настройку отдельных позиций, выбор режима обслуживания (Отгрузка или Прессование + Отгрузка), варианты экспресс- или отложенной выплаты, экономику, масштабируемую по уровню сложности с комиссиями, и полную поддержку мультиплеера.
+
+Использование:
+- Выберите собственное поле с тюками на карте, чтобы увидеть кнопку «Продать тюки».
+- Выберите тип услуги, настройте позиции и способ выплаты, затем подтвердите продажу.
+
+Для получения дополнительной информации или сообщения об ошибке посетите GitHub (modnext/baleDirect).
+]]></ru>
+  </description>
+
+  <l10n filenamePrefix="l10n/l10n" />
+
+  <iconFilename>icon_baleDirect.dds</iconFilename>
+  <multiplayer supported="true" />
+
+  <extraSourceFiles>
+    <sourceFile filename="src/main.lua" />
+  </extraSourceFiles>
+</modDesc>

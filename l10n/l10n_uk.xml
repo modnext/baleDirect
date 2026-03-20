@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Прямий Продаж Тюків" />
+    <text name="baleDirect_subtitle" text="Служба видаленого збору (-%d%% ціна, стягується комісія)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Тюки" />
+    <text name="baleDirect_grossValue" text="Вартість" />
+    <text name="baleDirect_totalFees" text="Комісія" />
+    <text name="baleDirect_netProfit" text="Чистий прибуток" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Тип послуги:" />
+    <text name="baleDirect_modeExistingBales" text="Збір" />
+    <text name="baleDirect_modeVirtualBaling" text="Пресування + Збір" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="На полі немає тюків" />
+    <text name="baleDirect_noWindrowsFound" text="Покосів не знайдено" />
+    <text name="baleDirect_sell" text="Продати" />
+    <text name="baleDirect_openDialog" text="Продати тюки" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Виплата" />
+    <text name="baleDirect_deliveryExpress" text="Експрес (миттєво)" />
+    <text name="baleDirect_deliveryDeferred" text="Відстрочена (після сезону, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Очікувана виплата: %s. Місяць: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Збір" />
+    <text name="baleDirect_itemQuantity" text="Кількість" />
+    <text name="baleDirect_itemDisabled" text="Пропустити" />
+    <text name="baleDirect_itemEdit" text="Налаштувати" />
+    <text name="baleDirect_sellConfirm" text="Ви впевнені, що хочете виконати послугу?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d тюків (150 см - 5500 л)" />
+  </texts>
+</l10n>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Directe Balenverkoop" />
+    <text name="baleDirect_subtitle" text="Afhaalservice op afstand (-%d%% prijs, kosten van toepassing)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Balen" />
+    <text name="baleDirect_grossValue" text="Waarde" />
+    <text name="baleDirect_totalFees" text="Kosten" />
+    <text name="baleDirect_netProfit" text="Netto Winst" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Servicetype:" />
+    <text name="baleDirect_modeExistingBales" text="Afhalen" />
+    <text name="baleDirect_modeVirtualBaling" text="Persen + Afhalen" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Geen balen op het veld" />
+    <text name="baleDirect_noWindrowsFound" text="Geen zwaden gevonden" />
+    <text name="baleDirect_sell" text="Verkopen" />
+    <text name="baleDirect_openDialog" text="Balen Verkopen" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Uitbetaling" />
+    <text name="baleDirect_deliveryExpress" text="Express (onmiddellijk)" />
+    <text name="baleDirect_deliveryDeferred" text="Uitgesteld (na het seizoen, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Verwachte uitbetaling: %s. Maand: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Afhalen" />
+    <text name="baleDirect_itemQuantity" text="Aantal" />
+    <text name="baleDirect_itemDisabled" text="Overslaan" />
+    <text name="baleDirect_itemEdit" text="Configureren" />
+    <text name="baleDirect_sellConfirm" text="Weet u zeker dat u de service wilt uitvoeren?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d balen (150cm - 5500L)" />
+  </texts>
+</l10n>

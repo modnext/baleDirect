@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="ベールの直接販売" />
+    <text name="baleDirect_subtitle" text="遠隔回収サービス（価格 -%d%%、手数料がかかります）" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="ベール" />
+    <text name="baleDirect_grossValue" text="価値" />
+    <text name="baleDirect_totalFees" text="手数料" />
+    <text name="baleDirect_netProfit" text="純利益" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="サービスタイプ：" />
+    <text name="baleDirect_modeExistingBales" text="回収" />
+    <text name="baleDirect_modeVirtualBaling" text="ベーリング + 回収" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="フィールドにベールがありません" />
+    <text name="baleDirect_noWindrowsFound" text="ウィンドロウが見つかりません" />
+    <text name="baleDirect_sell" text="売却" />
+    <text name="baleDirect_openDialog" text="ベールを売る" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="受取方式" />
+    <text name="baleDirect_deliveryExpress" text="エクスプレス（即時）" />
+    <text name="baleDirect_deliveryDeferred" text="後払い（シーズン後、-%d%%）" />
+    <text name="baleDirect_expectedBanner" text="支払い予定額: %s。月: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="回収" />
+    <text name="baleDirect_itemQuantity" text="数量" />
+    <text name="baleDirect_itemDisabled" text="スキップ" />
+    <text name="baleDirect_itemEdit" text="設定" />
+    <text name="baleDirect_sellConfirm" text="サービスを実行してもよろしいですか？" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d ベール (150cm - 5500L)" />
+  </texts>
+</l10n>

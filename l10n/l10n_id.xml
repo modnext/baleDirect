@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Penjualan Bal Langsung" />
+    <text name="baleDirect_subtitle" text="Layanan penjemputan jarak jauh (-%d%% harga, berlaku biaya)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Bal" />
+    <text name="baleDirect_grossValue" text="Nilai" />
+    <text name="baleDirect_totalFees" text="Biaya" />
+    <text name="baleDirect_netProfit" text="Laba Bersih" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Tipe Layanan:" />
+    <text name="baleDirect_modeExistingBales" text="Penjemputan" />
+    <text name="baleDirect_modeVirtualBaling" text="Pembungkusan + Penjemputan" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Tidak ada bal di lapangan" />
+    <text name="baleDirect_noWindrowsFound" text="Tidak ditemukan barisan rumput" />
+    <text name="baleDirect_sell" text="Jual" />
+    <text name="baleDirect_openDialog" text="Jual Bal" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Pencairan" />
+    <text name="baleDirect_deliveryExpress" text="Kilat (instan)" />
+    <text name="baleDirect_deliveryDeferred" text="Ditangguhkan (setelah musim, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Pembayaran yang diharapkan: %s. Bulan: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Penjemputan" />
+    <text name="baleDirect_itemQuantity" text="Jumlah" />
+    <text name="baleDirect_itemDisabled" text="Lewati" />
+    <text name="baleDirect_itemEdit" text="Konfigurasi" />
+    <text name="baleDirect_sellConfirm" text="Apakah Anda yakin ingin memproses layanan ini?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d bal (150cm - 5500L)" />
+  </texts>
+</l10n>

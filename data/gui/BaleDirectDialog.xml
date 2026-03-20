@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+  <GuiElement profile="newLayer" />
+  <Bitmap profile="dialogFullscreenBg" id="dialogBg" />
+
+  <GuiElement profile="fs25_dialogBg" id="dialogElement" size="1200px 650px">
+    <ThreePartBitmap profile="fs25_dialogBgMiddleSmall" />
+    <ThreePartBitmap profile="fs25_dialogBgTopSmall" />
+    <ThreePartBitmap profile="fs25_dialogBgBottom" />
+
+    <GuiElement profile="fs25_dialogContentContainer">
+      <GuiElement profile="baleDirectHeader">
+        <Bitmap profile="baleDirectHeaderIconBg">
+          <Bitmap profile="baleDirectHeaderIcon" imageSliceId="gui.icon_ingameMenu_prices" />
+        </Bitmap>
+
+        <Text profile="baleDirectHeaderTitle" id="titleText" text="$l10n_baleDirect_title" />
+        <Text profile="baleDirectHeaderSubtitle" id="subtitleText" text="$l10n_baleDirect_subtitle" />
+
+        <Text profile="baleDirectHeaderModeLabel" text="$l10n_baleDirect_mode" />
+        <MultiTextOption profile="baleDirectHeaderModeOption" id="modeOption" texts="$l10n_baleDirect_modeExistingBales|$l10n_baleDirect_modeVirtualBaling" onClick="onClickModeOption" focusId="modeOption" focusInit="onOpen" focusChangeBottom="fillTypeList" />
+      </GuiElement>
+
+      <Bitmap profile="baleDirectSeparator" absoluteSizeOffset="85px 0px" position="0px -120px" />
+
+      <!-- Main Content Layout -->
+      <BoxLayout profile="baleDirectMainLayout">
+        <BoxLayout profile="baleDirectLeftColumn">
+
+          <!-- Settings Header -->
+          <Bitmap profile="baleDirectSettingHeader">
+            <Bitmap profile="baleDirectSettingIcon" imageSliceId="gui.icon_goeweil_wrappedBale" />
+            <Text profile="baleDirectSettingLabel" text="$l10n_baleDirect_baleCount" />
+            <Text profile="baleDirectSettingValue" id="baleCountText" text="- / -" />
+          </Bitmap>
+
+          <!-- Fill Type List -->
+          <SmoothList profile="baleDirectFillTypeList" id="fillTypeList" onDoubleClick="onClickFillTypeItem" focusId="fillTypeList" focusChangeTop="modeOption" focusChangeBottom="deliveryOption">
+            <ListItem profile="baleDirectFillTypeItem">
+              <Bitmap profile="baleDirectFillTypeItemIcon" name="icon" />
+              <Text profile="baleDirectFillTypeName" name="fillTypeName" />
+              <Text profile="baleDirectFillTypeQuantity" name="quantityText" />
+              <Text profile="baleDirectFillTypeVirtualInfo" name="virtualInfoText" />
+              <Text profile="baleDirectFillTypeValue" name="valueText" />
+              <Text profile="baleDirectFillTypeFee" name="feeText" />
+            </ListItem>
+          </SmoothList>
+
+          <!-- Delivery Type Option -->
+          <Bitmap profile="baleDirectDeliveryRow">
+            <Bitmap profile="baleDirectSettingIcon" imageSliceId="gui.currency_dollar" />
+            <Text profile="baleDirectDeliveryLabel" text="$l10n_baleDirect_deliveryType" />
+            <MultiTextOption profile="baleDirectDeliveryOption" id="deliveryOption" texts="$l10n_baleDirect_deliveryExpress|$l10n_baleDirect_deliveryDeferred" onClick="onClickDeliveryOption" focusId="deliveryOption" focusChangeTop="fillTypeList" />
+          </Bitmap>
+
+          <!-- Summary Footer -->
+          <BoxLayout profile="baleDirectSummaryFooter">
+            <BoxLayout profile="baleDirectSummaryLeft">
+              <Bitmap profile="baleDirectSummaryRow">
+                <Text profile="baleDirectSummaryLabel" text="$l10n_baleDirect_grossValue" />
+                <Text profile="baleDirectSummaryValue" id="grossValueText" text="-" />
+              </Bitmap>
+              <Bitmap profile="baleDirectSummaryRow">
+                <Text profile="baleDirectSummaryLabel" text="$l10n_baleDirect_totalFees" textMaxWidth="90px" />
+                <Text profile="baleDirectSummaryValue" id="serviceFeeText" text="-" textMaxWidth="350px" />
+              </Bitmap>
+            </BoxLayout>
+            <Bitmap profile="baleDirectSummaryTotalBox">
+              <Text profile="baleDirectSummaryTotalLabel" text="$l10n_baleDirect_netProfit" />
+              <Text profile="baleDirectSummaryTotalValue" id="netProfitText" text="-" />
+            </Bitmap>
+          </BoxLayout>
+        </BoxLayout>
+
+        <!-- Right Panel - Map Preview -->
+        <GuiElement profile="baleDirectRightColumn" id="mapBox">
+          <InGameMapPreview profile="fs25_aiSettingsIngameMap" id="ingameMapElement" onDrawPostIngameMapHotspots="onDrawPostIngameMapHotspots" />
+          <Text profile="fs25_aiSettingsNoFieldFound" id="noBalesText" text="$l10n_baleDirect_noBalesFound" />
+          <Text profile="fs25_aiSettingsNoFieldFound" id="windrowsFoundText" text="$l10n_baleDirect_noWindrowsFound" visible="false" />
+          <Animation profile="fs25_aiSettingsLoadingAnimation" id="loadingAnimation" visible="false" />
+        </GuiElement>
+      </BoxLayout>
+    </GuiElement>
+
+    <!-- Expected payout -->
+    <Text profile="baleDirectFooterExpectedText" id="expectedPayoutText" text="" visible="false" />
+
+    <!-- Footer buttons -->
+    <BoxLayout profile="fs25_dialogButtonBox">
+      <Button profile="buttonBack" id="backButton" onClick="onClickBack" text="$l10n_button_back" />
+      <Bitmap profile="fs25_dialogButtonBoxSeparator" />
+      <Button profile="buttonActivate" id="configureButton" onClick="onClickConfigure" text="$l10n_baleDirect_itemEdit" />
+      <Bitmap profile="fs25_dialogButtonBoxSeparator" />
+      <Button profile="buttonOK" id="sellButton" text="$l10n_baleDirect_sell" onClick="onClickSell" />
+    </BoxLayout>
+  </GuiElement>
+
+  <GUIProfiles>
+    <Profile name="fs25_aiSettingsMultiTextOption2" extends="fs25_multiTextOption" with="anchorMiddleRight">
+      <position value="-10px 0px" />
+      <textSize value="16px" />
+    </Profile>
+    <Profile name="fs25_aiSettingsIngameMap" extends="baseReference" with="anchorStretchingYStretchingX" />
+    <Profile name="fs25_aiSettingsNoFieldFound" extends="fs25_textDefault" with="anchorMiddleCenter">
+      <textSize value="15px" />
+      <textAlignment value="center" />
+      <textMaxNumLines value="2" />
+    </Profile>
+    <Profile name="fs25_aiSettingsLoadingAnimation" extends="baseReference" with="anchorMiddleCenter pivotMiddleCenter">
+      <size value="127px 127px" />
+      <imageSliceId value="gui.loadingAnimation" />
+      <imageColor value="$preset_fs25_colorMainHighlight" />
+      <animationMode value="rotate" />
+      <animationSpeed value="1000" />
+    </Profile>
+
+    <!-- Layout -->
+    <Profile name="baleDirectMainLayout" extends="emptyPanel" with="anchorTopCenter">
+      <size value="1095px 385px" />
+      <position value="0px -150px" />
+      <flowDirection value="horizontal" />
+      <elementSpacing value="32px" />
+    </Profile>
+    <Profile name="baleDirectLeftColumn" extends="emptyPanel" with="anchorTopLeft">
+      <size value="625px 100%" />
+      <flowDirection value="vertical" />
+    </Profile>
+    <Profile name="baleDirectRightColumn" extends="emptyPanel" with="anchorTopLeft anchorStretchingYStretchingX">
+      <size value="438px 100%" />
+    </Profile>
+    <Profile name="baleDirectSeparator" extends="baseReference" with="anchorTopStretchingX pivotTopCenter">
+      <height value="1dp" />
+      <position value="0px 1dp" />
+      <absoluteSizeOffset value="19px 0px" />
+      <imageColor value="$preset_fs25_colorGreyLight" />
+    </Profile>
+
+    <!-- Header -->
+    <Profile name="baleDirectHeader" extends="emptyPanel" with="anchorTopLeft">
+      <size value="100% 120px" />
+      <verticalAlignment value="center" />
+    </Profile>
+    <Profile name="baleDirectHeaderIconBg" extends="emptyPanel" with="anchorMiddleLeft">
+      <size value="80px 80px" />
+      <position value="40px 0" />
+    </Profile>
+    <Profile name="baleDirectHeaderIcon" extends="baseReference" with="anchorMiddleCenter">
+      <size value="64px 64px" />
+      <imageSliceId value="gui.icon_vehicleDealer_machines" />
+      <imageColor value="$preset_fs25_colorMainHighlight" />
+    </Profile>
+    <Profile name="baleDirectHeaderTitle" extends="fs25_textDefault" with="anchorMiddleLeft">
+      <textSize value="36px" />
+      <position value="135px 13px" />
+      <margin value="0 0 0 0" />
+      <titleCase value="true" />
+      <textUpperCase value="true" />
+      <textAutoWidth value="true" />
+      <textColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+    <Profile name="baleDirectHeaderSubtitle" extends="fs25_textDefault" with="anchorMiddleLeft">
+      <textSize value="16px" />
+      <textAutoWidth value="true" />
+      <position value="135px -17px" />
+      <textColor value="1 1 1 0.7" />
+    </Profile>
+    <Profile name="baleDirectHeaderModeLabel" extends="fs25_textDefault" with="anchorMiddleRight">
+      <size value="300px 20px" />
+      <position value="-40px 20px" />
+      <textSize value="12px" />
+      <textAlignment value="left" />
+      <textUpperCase value="true" />
+      <textColor value="0.8 0.8 0.8 1" />
+      <margin value="0 0 0 0" />
+    </Profile>
+    <Profile name="baleDirectHeaderModeOption" extends="fs25_multiTextOption" with="anchorMiddleRight">
+      <size value="300px 40px" />
+      <position value="-40px -10px" />
+      <margin value="0 0 0 0" />
+    </Profile>
+
+    <!-- Fill Type List -->
+    <Profile name="baleDirectFillTypeList" extends="emptyPanel" with="anchorTopLeft">
+      <size value="100% 219px" />
+      <itemizedScrollDelta value="1" />
+      <clipping value="true" />
+    </Profile>
+    <Profile name="baleDirectFillTypeItem" extends="baseReference" with="anchorTopStretchingX">
+      <height value="61px" />
+      <imageColor value="$preset_fs25_colorGrey" />
+      <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50" />
+    </Profile>
+    <Profile name="baleDirectFillTypeItemIcon" extends="baseReference" with="anchorTopLeft">
+      <position value="16.5px -14px" />
+      <size value="32px 32px" />
+      <imageSliceId value="noSlice" />
+      <imageUVs value="0 0 1 1" />
+      <imageColor value="1.0 1.0 1.0 1.0" />
+    </Profile>
+    <Profile name="baleDirectFillTypeName" extends="fs25_textDefault" with="anchorTopLeft">
+      <position value="65px -10px" />
+      <textMaxWidth value="420px" />
+      <textMaxNumLines value="1" />
+      <textSize value="18px" />
+      <textBold value="true" />
+      <textUpperCase value="true" />
+      <textColor value="$preset_fs25_colorMainLight" />
+      <textSelectedColor value="$preset_fs25_colorMainHighlight" />
+    </Profile>
+    <Profile name="baleDirectFillTypeQuantity" extends="fs25_textDefault" with="anchorBottomLeft">
+      <position value="65px 8px" />
+      <textSize value="16px" />
+      <textColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+    <Profile name="baleDirectFillTypeValue" extends="fs25_textDefault" with="anchorMiddleRight">
+      <position value="-20px 8px" />
+      <textSize value="16px" />
+      <textAlignment value="right" />
+      <textColor value="$preset_fs25_colorMainLight" />
+      <textSelectedColor value="$preset_fs25_colorMainHighlight" />
+    </Profile>
+    <Profile name="baleDirectFillTypeFee" extends="fs25_textDefault" with="anchorMiddleRight">
+      <position value="-20px -8px" />
+      <textSize value="12px" />
+      <textAlignment value="right" />
+      <textColor value="0.5 0.5 0.5 1" />
+      <textSelectedColor value="0.7 0.7 0.7 1" />
+    </Profile>
+    <Profile name="baleDirectFillTypeVirtualInfo" extends="fs25_textDefault" with="anchorBottomLeft">
+      <position value="65px 10px" />
+      <textSize value="14px" />
+      <textColor value="0.7 0.7 0.7 1" />
+      <visible value="false" />
+    </Profile>
+
+    <!-- Setting -->
+    <Profile name="baleDirectSettingHeader" extends="baseReference" with="anchorTopLeft">
+      <size value="100% 40px" />
+      <imageColor value="$preset_fs25_colorMainDark_40" />
+    </Profile>
+    <Profile name="baleDirectSettingIcon" extends="baseReference" with="anchorMiddleLeft">
+      <position value="10px 0" />
+      <size value="20px 20px" />
+      <imageColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+    <Profile name="baleDirectSettingLabel" extends="fs25_textDefault" with="anchorMiddleLeft">
+      <position value="40px 0" />
+      <textSize value="16px" />
+      <textColor value="$preset_fs25_colorMainLight" />
+      <textUpperCase value="true" />
+    </Profile>
+    <Profile name="baleDirectSettingValue" extends="fs25_textDefault" with="anchorMiddleRight">
+      <position value="-10px 0" />
+      <textSize value="16px" />
+      <textAlignment value="right" />
+      <textUpperCase value="true" />
+    </Profile>
+
+
+    <!-- Delivery -->
+    <Profile name="baleDirectDeliveryRow" extends="baseReference" with="anchorTopLeft">
+      <size value="100% 38px" />
+      <imageColor value="$preset_fs25_colorMainDark_40" />
+      <margin value="0 4px 0 0" />
+    </Profile>
+    <Profile name="baleDirectDeliveryLabel" extends="fs25_textDefault" with="anchorMiddleLeft">
+      <position value="40px 0" />
+      <textSize value="16px" />
+      <textColor value="$preset_fs25_colorMainLight" />
+      <textUpperCase value="true" />
+    </Profile>
+    <Profile name="baleDirectDeliveryOption" extends="fs25_multiTextOption" with="anchorMiddleRight">
+      <size value="300px 36px" />
+      <position value="-10px 0" />
+      <defaultProfileButtonLeft value="baleDirectDeliveryOptionLeft" />
+      <defaultProfileButtonRight value="baleDirectDeliveryOptionRight" />
+      <defaultProfileBgThreePart value="emptyPanel" />
+    </Profile>
+    <Profile name="baleDirectDeliveryOptionLeft" extends="fs25_multiTextOptionLeft" with="anchorStretchingYLeft">
+      <iconTextOffset value="-20px 0px" />
+    </Profile>
+    <Profile name="baleDirectDeliveryOptionRight" extends="baleDirectDeliveryOptionLeft" with="anchorStretchingYRight">
+      <iconRotation value="0" />
+      <iconTextOffset value="20px 0px" />
+    </Profile>
+
+    <!-- Summary -->
+    <Profile name="baleDirectSummaryFooter" extends="emptyPanel" with="anchorTopLeft">
+      <size value="100% 80px" />
+      <flowDirection value="horizontal" />
+      <elementSpacing value="4px" />
+      <margin value="0 4px 0 0" />
+    </Profile>
+    <Profile name="baleDirectSummaryLeft" extends="emptyPanel" with="anchorMiddleLeft">
+      <size value="450px 100%" />
+      <flowDirection value="vertical" />
+      <elementSpacing value="4px" />
+      <verticalAlignment value="bottom" />
+    </Profile>
+    <Profile name="baleDirectSummaryRow" extends="baseReference" with="anchorTopLeft">
+      <size value="100% 38px" />
+      <imageColor value="0 0 0 0.6" />
+    </Profile>
+    <Profile name="baleDirectSummaryLabel" extends="fs25_textDefault" with="anchorMiddleLeft">
+      <position value="15px 0" />
+      <textSize value="16px" />
+      <textColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+    <Profile name="baleDirectSummaryValue" extends="fs25_textDefault" with="anchorMiddleRight">
+      <position value="-15px 0" />
+      <textSize value="16px" />
+      <textAlignment value="right" />
+    </Profile>
+    <Profile name="baleDirectSummaryTotalBox" extends="baseReference" with="anchorMiddleRight">
+      <size value="171px 100%" />
+      <imageColor value="1 1 1 0.15" />
+    </Profile>
+    <Profile name="baleDirectSummaryTotalLabel" extends="fs25_textDefault" with="anchorMiddleCenter">
+      <position value="0 15px" />
+      <textSize value="16px" />
+      <textAlignment value="center" />
+      <textColor value="0.7 0.7 0.7 1" />
+      <textUpperCase value="true" />
+    </Profile>
+    <Profile name="baleDirectSummaryTotalValue" extends="fs25_textDefault" with="anchorMiddleCenter">
+      <position value="0 -10px" />
+      <textSize value="26px" />
+      <textAlignment value="center" />
+      <textColor value="$preset_fs25_colorMainLight" />
+      <textBold value="true" />
+    </Profile>
+
+    <!-- Expected payout -->
+    <Profile name="baleDirectFooterExpectedText" extends="fs25_textDefault" with="anchorBottomLeft">
+      <size value="380px 36px" />
+      <position value="20px 32px" />
+      <textSize value="15px" />
+      <textMaxWidth value="380px" />
+      <textLayoutMode value="scrolling" />
+      <textScrollOnFocusOnly value="false" />
+      <textUpperCase value="true" />
+      <textColor value="$preset_fs25_colorMainLight_80" />
+    </Profile>
+  </GUIProfiles>
+</GUI>

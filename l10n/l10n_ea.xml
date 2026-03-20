@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Venta Directa de Balas" />
+    <text name="baleDirect_subtitle" text="Servicio de recogida remota (-%d%% precio, se aplican cargos)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Balas" />
+    <text name="baleDirect_grossValue" text="Valor" />
+    <text name="baleDirect_totalFees" text="Cargos" />
+    <text name="baleDirect_netProfit" text="Beneficio Neto" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Tipo de Servicio:" />
+    <text name="baleDirect_modeExistingBales" text="Recogida" />
+    <text name="baleDirect_modeVirtualBaling" text="Empacado + Recogida" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="No hay balas en el campo" />
+    <text name="baleDirect_noWindrowsFound" text="No se encontraron hileras" />
+    <text name="baleDirect_sell" text="Vender" />
+    <text name="baleDirect_openDialog" text="Vender Balas" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Abono" />
+    <text name="baleDirect_deliveryExpress" text="Express (al instante)" />
+    <text name="baleDirect_deliveryDeferred" text="Diferido (pos-temporada, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Pago esperado: %s. Mes: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Recogida" />
+    <text name="baleDirect_itemQuantity" text="Cantidad" />
+    <text name="baleDirect_itemDisabled" text="Omitir" />
+    <text name="baleDirect_itemEdit" text="Configurar" />
+    <text name="baleDirect_sellConfirm" text="¿Estás seguro de que quieres procesar el servicio?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d balas (150cm - 5500L)" />
+  </texts>
+</l10n>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Vente Directe de Balles" />
+    <text name="baleDirect_subtitle" text="Service de ramassage à distance (-%d%% de prix, frais applicables)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Balles" />
+    <text name="baleDirect_grossValue" text="Valeur" />
+    <text name="baleDirect_totalFees" text="Frais" />
+    <text name="baleDirect_netProfit" text="Bénéfice Net" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Type de Service :" />
+    <text name="baleDirect_modeExistingBales" text="Ramassage" />
+    <text name="baleDirect_modeVirtualBaling" text="Pressage + Ramassage" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Aucune balle sur le champ" />
+    <text name="baleDirect_noWindrowsFound" text="Aucun andain trouvé" />
+    <text name="baleDirect_sell" text="Vendre" />
+    <text name="baleDirect_openDialog" text="Vendre les Balles" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Versement" />
+    <text name="baleDirect_deliveryExpress" text="Express (instantané)" />
+    <text name="baleDirect_deliveryDeferred" text="Différé (après-saison, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Paiement prévu : %s. Mois : %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Ramassage" />
+    <text name="baleDirect_itemQuantity" text="Quantité" />
+    <text name="baleDirect_itemDisabled" text="Passer" />
+    <text name="baleDirect_itemEdit" text="Configurer" />
+    <text name="baleDirect_sellConfirm" text="Êtes-vous sûr de vouloir traiter le service ?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d balles (150cm - 5500L)" />
+  </texts>
+</l10n>

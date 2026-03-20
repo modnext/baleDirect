@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Sell Bales Remotely" />
+    <text name="baleDirect_subtitle" text="Remote pickup service (-%d%% price, fees apply)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Bales" />
+    <text name="baleDirect_grossValue" text="Value" />
+    <text name="baleDirect_totalFees" text="Fees" />
+    <text name="baleDirect_netProfit" text="Net Profit" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Service Type:" />
+    <text name="baleDirect_modeExistingBales" text="Pickup" />
+    <text name="baleDirect_modeVirtualBaling" text="Baling + Pickup" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="No bales on field" />
+    <text name="baleDirect_noWindrowsFound" text="No windrows found" />
+    <text name="baleDirect_sell" text="Sell" />
+    <text name="baleDirect_openDialog" text="Sell Bales" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Payout" />
+    <text name="baleDirect_deliveryExpress" text="Express (instant)" />
+    <text name="baleDirect_deliveryDeferred" text="Deferred (post-season, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Expected payout: %s. Month: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Pickup" />
+    <text name="baleDirect_itemQuantity" text="Quantity" />
+    <text name="baleDirect_itemDisabled" text="Skip" />
+    <text name="baleDirect_itemEdit" text="Configure" />
+    <text name="baleDirect_sellConfirm" text="Are you sure you want to process the service?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d bales (150cm - 5500L)" />
+  </texts>
+</l10n>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="颗粒直接销售" />
+    <text name="baleDirect_subtitle" text="远程取件服务（-%d%% 价格，需支付费用）" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="捆" />
+    <text name="baleDirect_grossValue" text="价值" />
+    <text name="baleDirect_totalFees" text="费用" />
+    <text name="baleDirect_netProfit" text="净利润" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="服务类型：" />
+    <text name="baleDirect_modeExistingBales" text="取件" />
+    <text name="baleDirect_modeVirtualBaling" text="打捆 + 取件" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="田间没有捆包" />
+    <text name="baleDirect_noWindrowsFound" text="未发现草堆" />
+    <text name="baleDirect_sell" text="出售" />
+    <text name="baleDirect_openDialog" text="出售捆包" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="结算方式" />
+    <text name="baleDirect_deliveryExpress" text="快递（即时）" />
+    <text name="baleDirect_deliveryDeferred" text="延迟（季节后，-%d%%）" />
+    <text name="baleDirect_expectedBanner" text="预期支出：%s。月份：%s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="取件" />
+    <text name="baleDirect_itemQuantity" text="数量" />
+    <text name="baleDirect_itemDisabled" text="跳过" />
+    <text name="baleDirect_itemEdit" text="配置" />
+    <text name="baleDirect_sellConfirm" text="您确定要处理该服务吗？" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d 捆 (150cm - 5500L)" />
+  </texts>
+</l10n>

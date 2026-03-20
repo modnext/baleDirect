@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Vânzare Directă Bale" />
+    <text name="baleDirect_subtitle" text="Serviciu de ridicare la distanță (-%d%% preț, se aplică taxe)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Bale" />
+    <text name="baleDirect_grossValue" text="Valoare" />
+    <text name="baleDirect_totalFees" text="Taxe" />
+    <text name="baleDirect_netProfit" text="Profit Net" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Tipul Serviciului:" />
+    <text name="baleDirect_modeExistingBales" text="Ridicare" />
+    <text name="baleDirect_modeVirtualBaling" text="Balotat + Ridicare" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Nu există bale pe câmp" />
+    <text name="baleDirect_noWindrowsFound" text="Nu s-au găsit rânduri" />
+    <text name="baleDirect_sell" text="Vinde" />
+    <text name="baleDirect_openDialog" text="Vinde Bale" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Decontare" />
+    <text name="baleDirect_deliveryExpress" text="Express (instant)" />
+    <text name="baleDirect_deliveryDeferred" text="Amânat (după sezon, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Plată estimată: %s. Lună: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Ridicare" />
+    <text name="baleDirect_itemQuantity" text="Cantitate" />
+    <text name="baleDirect_itemDisabled" text="Sari peste" />
+    <text name="baleDirect_itemEdit" text="Configurează" />
+    <text name="baleDirect_sellConfirm" text="Sunteți sigur că doriți să procesați serviciul?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d bale (150cm - 5500L)" />
+  </texts>
+</l10n>

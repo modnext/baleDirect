@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="베일 직접 판매" />
+    <text name="baleDirect_subtitle" text="원격 수거 서비스 (가격 -%d%%, 수수료 발생)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="베일" />
+    <text name="baleDirect_grossValue" text="가치" />
+    <text name="baleDirect_totalFees" text="수수료" />
+    <text name="baleDirect_netProfit" text="순이익" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="서비스 유형:" />
+    <text name="baleDirect_modeExistingBales" text="수거" />
+    <text name="baleDirect_modeVirtualBaling" text="베일링 + 수거" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="들판에 베일이 없습니다" />
+    <text name="baleDirect_noWindrowsFound" text="윈드로우를 찾을 수 없습니다" />
+    <text name="baleDirect_sell" text="판매" />
+    <text name="baleDirect_openDialog" text="베일 판매" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="지급 방식" />
+    <text name="baleDirect_deliveryExpress" text="익스프레스 (즉시)" />
+    <text name="baleDirect_deliveryDeferred" text="지연 지불 (시즌 후, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="예상 지급액: %s. 월: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="수거" />
+    <text name="baleDirect_itemQuantity" text="수량" />
+    <text name="baleDirect_itemDisabled" text="건너뛰기" />
+    <text name="baleDirect_itemEdit" text="설정" />
+    <text name="baleDirect_sellConfirm" text="서비스를 진행하시겠습니까?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d 베일 (150cm - 5500L)" />
+  </texts>
+</l10n>

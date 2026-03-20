@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+  <GuiElement profile="newLayer" />
+  <Bitmap profile="dialogFullscreenBg" id="dialogBg" />
+
+  <GuiElement profile="fs25_dialogBg" id="dialogElement" size="550px 285px">
+    <ThreePartBitmap profile="fs25_dialogBgMiddleSmall" />
+    <ThreePartBitmap profile="fs25_dialogBgTopSmall" />
+    <ThreePartBitmap profile="fs25_dialogBgBottom" />
+
+    <GuiElement profile="fs25_dialogContentContainer">
+      <GuiElement profile="baleDirectItemHeaderBox">
+        <Bitmap profile="baleDirectItemHeaderIconBg" id="fillTypeIcon" />
+        <Text profile="baleDirectItemTitle" id="dialogTitleText" text="Fill Type" />
+        <Text profile="baleDirectItemSummary" id="summaryText" text="0 / 0" />
+      </GuiElement>
+
+      <Bitmap profile="baleDirectItemSeparator" />
+
+      <!-- Settings -->
+      <BoxLayout profile="baleDirectItemSettingsBox" id="settingsBox">
+        <Bitmap profile="baleDirectItemSettingRow">
+          <Text profile="baleDirectItemSettingLabel" text="$l10n_baleDirect_itemSellEnabled" />
+          <BinaryOption profile="baleDirectItemBinaryOption" id="sellEnabledOption" onClick="onClickSellEnabled" />
+        </Bitmap>
+        <Bitmap profile="baleDirectItemSettingRow">
+          <Text profile="baleDirectItemSettingLabel" text="$l10n_baleDirect_itemQuantity" />
+          <OptionSlider profile="baleDirectItemSlider" id="quantitySlider" onClick="onClickQuantitySlider">
+            <Text profile="baleDirectItemSliderText" name="name" />
+          </OptionSlider>
+        </Bitmap>
+      </BoxLayout>
+    </GuiElement>
+
+    <!-- Footer buttons -->
+    <BoxLayout profile="fs25_dialogButtonBox">
+      <Button profile="buttonBack" id="backButton" onClick="onClickBack" text="$l10n_button_back" />
+      <Bitmap profile="fs25_dialogButtonBoxSeparator" />
+      <Button profile="buttonOK" id="okButton" text="$l10n_button_ok" onClick="onClickOk" />
+    </BoxLayout>
+  </GuiElement>
+
+  <GUIProfiles>
+    <Profile name="baleDirectItemHeaderBox" extends="emptyPanel" with="anchorTopCenter">
+      <size value="100% 70px" />
+    </Profile>
+    <Profile name="baleDirectItemHeaderIconBg" extends="baseReference" with="anchorMiddleLeft">
+      <position value="20px 0" />
+      <size value="48px 48px" />
+      <imageSliceId value="noSlice" />
+      <imageUVs value="0 0 1 1" />
+      <imageColor value="1.0 1.0 1.0 1.0" />
+    </Profile>
+    <Profile name="baleDirectItemTitle" extends="fs25_textDefault" with="anchorMiddleLeft">
+      <position value="85px 0px" />
+      <textSize value="28px" />
+      <textMaxWidth value="320px" />
+      <textMaxNumLines value="1" />
+      <textBold value="true" />
+      <textUpperCase value="true" />
+      <textColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+    <Profile name="baleDirectItemSummary" extends="fs25_textDefault" with="anchorMiddleRight">
+      <position value="-30px 0" />
+      <textSize value="22px" />
+      <textAlignment value="right" />
+      <textBold value="true" />
+      <textColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+    <Profile name="baleDirectItemSeparator" extends="baseReference" with="anchorTopStretchingX pivotTopCenter">
+      <height value="1dp" />
+      <position value="0px -70px" />
+      <absoluteSizeOffset value="40px 0px" />
+      <imageColor value="$preset_fs25_colorGreyLight" />
+    </Profile>
+
+    <!-- Settings -->
+    <Profile name="baleDirectItemSettingsBox" extends="emptyPanel" with="anchorTopCenter">
+      <size value="490px 120px" />
+      <position value="0px -85px" />
+      <flowDirection value="vertical" />
+    </Profile>
+    <Profile name="baleDirectItemSettingRow" extends="baseReference" with="anchorTopStretchingX">
+      <height value="50px" />
+      <imageColor value="0.02956 0.02956 0.02956 0.2" />
+    </Profile>
+    <Profile name="baleDirectItemSettingLabel" extends="fs25_textDefault" with="anchorMiddleLeft">
+      <position value="15px 0" />
+      <textSize value="16px" />
+      <textColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+    <Profile name="baleDirectItemBinaryOption" extends="fs25_binaryOption" with="anchorMiddleRight">
+      <position value="-10px 0px" />
+      <width value="200px" />
+    </Profile>
+    <Profile name="baleDirectItemSlider" extends="fs25_optionSlider" with="anchorMiddleRight">
+      <position value="-10px 0px" />
+      <width value="200px" />
+      <defaultProfileText value="baleDirectItemSliderTextProfile" />
+    </Profile>
+    <Profile name="baleDirectItemSliderText" extends="fs25_optionSliderText" with="anchorMiddleCenter">
+      <textSize value="16px" />
+    </Profile>
+    <Profile name="baleDirectItemSliderTextProfile" extends="fs25_multiTextOptionText">
+      <textSize value="16px" />
+      <position value="-195px 0px" />
+      <textAlignment value="right" />
+    </Profile>
+  </GUIProfiles>
+</GUI>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Direkte Ballesalg" />
+    <text name="baleDirect_subtitle" text="Fjernafhentningsservice (-%d%% pris, gebyrer gælder)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Baller" />
+    <text name="baleDirect_grossValue" text="Værdi" />
+    <text name="baleDirect_totalFees" text="Gebyrer" />
+    <text name="baleDirect_netProfit" text="Nettooverskud" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Servicetype:" />
+    <text name="baleDirect_modeExistingBales" text="Afhentning" />
+    <text name="baleDirect_modeVirtualBaling" text="Presning + Afhentning" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Ingen baller på marken" />
+    <text name="baleDirect_noWindrowsFound" text="Ingen skår fundet" />
+    <text name="baleDirect_sell" text="Sælg" />
+    <text name="baleDirect_openDialog" text="Sælg Baller" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Udbetaling" />
+    <text name="baleDirect_deliveryExpress" text="Ekspres (straks)" />
+    <text name="baleDirect_deliveryDeferred" text="Udskudt (efter sæson, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Forventet udbetaling: %s. Måned: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Afhentning" />
+    <text name="baleDirect_itemQuantity" text="Antal" />
+    <text name="baleDirect_itemDisabled" text="Spring over" />
+    <text name="baleDirect_itemEdit" text="Konfigurer" />
+    <text name="baleDirect_sellConfirm" text="Er du sikker på, at du vil behandle tjenesten?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d baller (150cm - 5500L)" />
+  </texts>
+</l10n>

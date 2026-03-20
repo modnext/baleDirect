@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="Bán Kiện Trực Tiếp" />
+    <text name="baleDirect_subtitle" text="Dịch vụ thu gom từ xa (giá -%d%%, có tính phí)" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="Kiện" />
+    <text name="baleDirect_grossValue" text="Giá trị" />
+    <text name="baleDirect_totalFees" text="Phí" />
+    <text name="baleDirect_netProfit" text="Lợi nhuận ròng" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="Loại Dịch Vụ:" />
+    <text name="baleDirect_modeExistingBales" text="Thu gom" />
+    <text name="baleDirect_modeVirtualBaling" text="Đóng kiện + Thu gom" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="Không có kiện hàng trên đồng" />
+    <text name="baleDirect_noWindrowsFound" text="Không tìm thấy luống" />
+    <text name="baleDirect_sell" text="Bán" />
+    <text name="baleDirect_openDialog" text="Bán Kiện" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="Nhận tiền" />
+    <text name="baleDirect_deliveryExpress" text="Hỏa tốc (ngay lập tức)" />
+    <text name="baleDirect_deliveryDeferred" text="Hoãn lại (sau mùa vụ, -%d%%)" />
+    <text name="baleDirect_expectedBanner" text="Khoản thanh toán dự kiến: %s. Tháng: %s" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="Thu gom" />
+    <text name="baleDirect_itemQuantity" text="Số lượng" />
+    <text name="baleDirect_itemDisabled" text="Bỏ qua" />
+    <text name="baleDirect_itemEdit" text="Cấu hình" />
+    <text name="baleDirect_sellConfirm" text="Bạn có chắc chắn muốn xử lý dịch vụ không?" />
+    <text name="baleDirect_virtualBaleInfo" text="~%d kiện (150cm - 5500L)" />
+  </texts>
+</l10n>

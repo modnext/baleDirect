@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+  <texts>
+    <!-- Header -->
+    <text name="baleDirect_title" text="" />
+    <text name="baleDirect_subtitle" text="" />
+
+    <!-- Summary Statistics -->
+    <text name="baleDirect_baleCount" text="" />
+    <text name="baleDirect_grossValue" text="" />
+    <text name="baleDirect_totalFees" text="" />
+    <text name="baleDirect_netProfit" text="" />
+
+    <!-- Service Selection -->
+    <text name="baleDirect_mode" text="" />
+    <text name="baleDirect_modeExistingBales" text="" />
+    <text name="baleDirect_modeVirtualBaling" text="" />
+
+    <!-- Feedback & Actions -->
+    <text name="baleDirect_noBalesFound" text="" />
+    <text name="baleDirect_noWindrowsFound" text="" />
+    <text name="baleDirect_sell" text="" />
+    <text name="baleDirect_openDialog" text="" />
+
+    <!-- Payment Type -->
+    <text name="baleDirect_deliveryType" text="" />
+    <text name="baleDirect_deliveryExpress" text="" />
+    <text name="baleDirect_deliveryDeferred" text="" />
+    <text name="baleDirect_expectedBanner" text="" />
+
+    <!-- Item Configuration -->
+    <text name="baleDirect_itemSellEnabled" text="" />
+    <text name="baleDirect_itemQuantity" text="" />
+    <text name="baleDirect_itemDisabled" text="" />
+    <text name="baleDirect_itemEdit" text="" />
+    <text name="baleDirect_sellConfirm" text="" />
+    <text name="baleDirect_virtualBaleInfo" text="" />
+  </texts>
+</l10n>
